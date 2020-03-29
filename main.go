@@ -7,7 +7,7 @@ import (
 	"net/http"
 )
 
-
+// Serve up the Hello message
 func main() {
 	http.Handle("/", NewServer())
 	log.Fatal(http.ListenAndServe(":8080", nil))
